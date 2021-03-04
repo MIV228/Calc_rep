@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
         android:layout_height="115dp"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints" />
-
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        tools:ignore="ExtraText">
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:orientation="horizontal"
+    tools:ignore="MissingConstraints"
     <TextView
+        android:id="@+id/textView"
         style="@style/my_style"
         android:layout_width="match_parent"
         android:layout_height="115dp"
@@ -22,10 +28,34 @@
         android:text="Выражение"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,UnknownId"
         tools:layout_editor_absoluteX="2dp" />
-    />
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        tools:ignore="ExtraText">
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+
+        <TextView
+            style="@style/my_style"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@color/white"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="Выражение"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp" />
+    </LinearLayout>
 
 
     <LinearLayout
