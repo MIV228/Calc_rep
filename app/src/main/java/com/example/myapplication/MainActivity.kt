@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         //Операции
         c_plus.setOnClickListener { appendOnExpression("+", false) }
         c_minus.setOnClickListener { appendOnExpression("-", false) }
-        c_multi.setOnClickListener { appendOnExpression("x", false) }
-        c_div.setOnClickListener { appendOnExpression(":", false) }
+        c_multi.setOnClickListener { appendOnExpression("*", false) }
+        c_div.setOnClickListener { appendOnExpression("/", false) }
         c_open.setOnClickListener { appendOnExpression("(", false) }
         c_close.setOnClickListener { appendOnExpression(")", false) }
 
