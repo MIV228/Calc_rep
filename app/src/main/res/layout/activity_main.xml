@@ -21,7 +21,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        android:ellipsize="end"
+        android:textSize="40sp"
+        android:maxLines="1"
+        android:gravity="end"/>
 
     <TextView
         android:id="@+id/c_expression"
@@ -37,7 +41,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints,UnknownId"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        android:textSize="40sp"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:gravity="end"/>
 
     <LinearLayout
         android:id="@+id/c_keyboard"
