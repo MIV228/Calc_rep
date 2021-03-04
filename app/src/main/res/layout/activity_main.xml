@@ -65,7 +65,7 @@
             <ImageView
                 android:id="@+id/c_ac"
                 style="@style/my_style"
-                android:src="@mipmap/AC" />
+                android:src="@mipmap/ac" />
 
             <TextView
                 android:id="@+id/c_open"
@@ -186,7 +186,7 @@
             <ImageView
                 android:id="@+id/c_backspace"
                 style="@style/my_style"
-                android:src="@mipmap/C" />
+                android:src="@mipmap/c" />
 
             <TextView
                 android:id="@+id/c_equals"
