@@ -2,55 +2,45 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c_four"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
-
-
-    <LinearLayout
-        android:layout_height="115dp"
-        android:layout_width="match_parent"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/c_expression"
-            style="@style/my_style"
-            android:layout_width="match_parent"
-            android:layout_height="115dp"
-            android:background="@color/white"
-            android:fontFamily="@font/baloo_thambi"
-            android:text="Выражение"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
-            tools:ignore="MissingConstraints,UnknownId"
-            tools:layout_editor_absoluteX="2dp" />
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/c_result"
+        style="@style/my_style"
         android:layout_width="match_parent"
         android:layout_height="115dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        tools:ignore="ExtraText">
+        android:background="@color/white"
+        android:fontFamily="@font/baloo_thambi"
+        android:text="Ответ"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/c_keyboard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
-        <TextView
-            android:id="@+id/c_result"
-            style="@style/my_style"
-            android:layout_width="match_parent"
-            android:layout_height="115dp"
-            android:background="@color/white"
-            android:fontFamily="@font/baloo_thambi"
-            android:text="Ответ"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="2dp" />
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/c_expression"
+        style="@style/my_style"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginBottom="116dp"
+        android:background="@color/white"
+        android:fontFamily="@font/baloo_thambi"
+        android:text="Выражение"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/c_keyboard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="0dp" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/c_keyboard"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:orientation="vertical"
@@ -65,22 +55,26 @@
 
 
             <ImageView
+                android:id="@+id/c_ac"
                 style="@style/my_style"
-                android:src="@mipmap/AC"
-                />
+                android:src="@mipmap/AC" />
 
             <TextView
+                android:id="@+id/c_open"
                 style="@style/my_style"
-
                 android:text="(" />
-            <TextView
-                style="@style/my_style"
 
-                android:text=")" />
             <TextView
+                android:id="@+id/c_close"
+                style="@style/my_style"
+                android:text=")" />
+
+            <TextView
+                android:id="@+id/c_plus"
                 style="@style/my_style"
                 android:text="+" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -89,22 +83,26 @@
 
 
             <TextView
+                android:id="@+id/c_one"
                 style="@style/my_style"
-
                 android:text="1" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_two"
+                style="@style/my_style"
                 android:text="2" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_three"
+                style="@style/my_style"
                 android:text="3" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_minus"
+                style="@style/my_style"
                 android:text="-" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -114,21 +112,24 @@
 
             <TextView
                 style="@style/my_style"
-
                 android:text="4" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_five"
+                style="@style/my_style"
                 android:text="5" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_six"
+                style="@style/my_style"
                 android:text="6" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_multi"
+                style="@style/my_style"
                 android:text="x" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -137,22 +138,26 @@
 
 
             <TextView
+                android:id="@+id/c_seven"
                 style="@style/my_style"
-
                 android:text="7" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_eight"
+                style="@style/my_style"
                 android:text="8" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_nine"
+                style="@style/my_style"
                 android:text="9" />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_div"
+                style="@style/my_style"
                 android:text=":" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -161,23 +166,26 @@
 
 
             <TextView
+                android:id="@+id/c_dot"
                 style="@style/my_style"
-
                 android:text="." />
-            <TextView
-                style="@style/my_style"
 
+            <TextView
+                android:id="@+id/c_zero"
+                style="@style/my_style"
                 android:text="0" />
+
             <ImageView
+                android:id="@+id/c_backspace"
                 style="@style/my_style"
-
                 android:src="@mipmap/C" />
+
             <TextView
+                android:id="@+id/c_equals"
                 style="@style/my_style"
-
-
                 android:text="=" />
         </LinearLayout>
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
