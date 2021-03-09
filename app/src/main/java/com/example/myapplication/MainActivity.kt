@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //еееее роккк
+        c_result.setOnClickListener { appendOnExpression("лол", true) }
+        c_expression.setOnClickListener { appendOnExpression("кек", true) }
 
 
         //Числа
