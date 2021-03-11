@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //еееее роккк
-        main.setOnClickListener { appendOnExpression("", false) }
-        c_result.setOnClickListener { appendOnExpression("", false) }
-        c_expression.setOnClickListener { appendOnExpression("", false) }
+        main.setOnClickListener { appendOnExpression("", true) }
+        c_result.setOnClickListener { appendOnExpression("", true) }
+        c_expression.setOnClickListener { appendOnExpression("", true) }
 
 
         //Числа
@@ -78,5 +78,17 @@ class MainActivity : AppCompatActivity() {
                 c_expression.append(string)
                 c_result.text = ""
             }
+        if (!canClear)
+        {
+
+
+
         }
+        }
+//    fun doubleOperationSwitcher() {
+//        if (()) {
+//
+//        }
+//
+//    }
 }
