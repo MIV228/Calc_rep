@@ -78,9 +78,8 @@ class MainActivity : AppCompatActivity() {
                 c_expression.append(string)
                 c_result.text = ""
             }
-        if (!canClear)
-        {
-
+        if (!canClear) {
+            c_expression.text = string.substring(0, string.length-1)
 
 
         }
