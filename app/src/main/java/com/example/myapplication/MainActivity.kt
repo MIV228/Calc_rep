@@ -13,8 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //еееее роккк
-        c_result.setOnClickListener { appendOnExpression("лол", true) }
-        c_expression.setOnClickListener { appendOnExpression("кек", true) }
+        main.setOnClickListener { appendOnExpression("", false) }
+        c_result.setOnClickListener { appendOnExpression("", false) }
+        c_expression.setOnClickListener { appendOnExpression("", false) }
 
 
         //Числа
