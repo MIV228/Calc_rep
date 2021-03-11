@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity() {
         main.setOnClickListener { appendOnExpression("", true) }
         c_result.setOnClickListener { appendOnExpression("", true) }
         c_expression.setOnClickListener { appendOnExpression("", true) }
-
-
         //Числа
         c_one.setOnClickListener { appendOnExpression("1", true) }
         c_two.setOnClickListener { appendOnExpression("2", true) }
@@ -30,15 +28,32 @@ class MainActivity : AppCompatActivity() {
         c_nine.setOnClickListener { appendOnExpression("9", true) }
         c_zero.setOnClickListener { appendOnExpression("0", true) }
         c_dot.setOnClickListener { appendOnExpression(".", true) }
-
         //Операции
-        c_plus.setOnClickListener { appendOnExpression("+", false) }
-        c_minus.setOnClickListener { appendOnExpression("-", false) }
-        c_multi.setOnClickListener { appendOnExpression("*", false) }
-        c_div.setOnClickListener { appendOnExpression("/", false) }
-        c_open.setOnClickListener { appendOnExpression("(", false) }
-        c_close.setOnClickListener { appendOnExpression(")", false) }
+        c_plus.setOnClickListener {
+            if (c_expression.text.length - 1() = "1" || "2" ) {
+                c_expression.text.length - 1
+                c_expression.text = "+"
 
+
+            }
+            appendOnExpression("+", false)
+
+        }
+        c_minus.setOnClickListener { appendOnExpression("-", false)
+
+        }
+        c_multi.setOnClickListener { appendOnExpression("*", false)
+
+        }
+        c_div.setOnClickListener { appendOnExpression("/", false)
+
+        }
+        c_open.setOnClickListener { appendOnExpression("(", false)
+
+        }
+        c_close.setOnClickListener { appendOnExpression(")", false)
+
+        }
         c_ac.setOnClickListener {
             c_expression.text = ""
             c_result.text = ""
@@ -59,7 +74,6 @@ class MainActivity : AppCompatActivity() {
                     c_result.text = longResult.toString()
                 else
                     c_result.text = result.toString()
-
             }
             catch (e:Exception){
                 Log.d("Exception"," message " +e.message)
@@ -73,15 +87,11 @@ class MainActivity : AppCompatActivity() {
             if (canClear) {
                 c_result.text = ""
                 c_expression.append(string)
-            } else {
+            }
+            else {
                 c_expression.append(c_result.text)
                 c_expression.append(string)
                 c_result.text = ""
             }
-        if (!canClear) {
-            c_expression.text = string.substring(0, string.length-1)
-
-
-        }
         }
 }
