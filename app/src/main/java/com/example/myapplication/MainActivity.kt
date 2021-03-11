@@ -84,10 +84,4 @@ class MainActivity : AppCompatActivity() {
 
         }
         }
-//    fun doubleOperationSwitcher() {
-//        if (()) {
-//
-//        }
-//
-//    }
 }
