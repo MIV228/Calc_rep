@@ -29,18 +29,9 @@ class MainActivity : AppCompatActivity() {
         c_zero.setOnClickListener { appendOnExpression("0", true) }
         c_dot.setOnClickListener { appendOnExpression(".", true) }
         //Операции
-        c_plus.setOnClickListener {
-            if (c_expression.text.length - 1() = "1" || "2" ) {
-                c_expression.text.length - 1
-                c_expression.text = "+"
-
-
-            }
-            appendOnExpression("+", false)
-
+        c_plus.setOnClickListener { appendOnExpression("+", false)
         }
         c_minus.setOnClickListener { appendOnExpression("-", false)
-
         }
         c_multi.setOnClickListener { appendOnExpression("*", false)
 
@@ -94,4 +85,7 @@ class MainActivity : AppCompatActivity() {
                 c_result.text = ""
             }
         }
+//            if (c_expression.text.length - 1() = "1" || "2" ) {
+//                c_expression.text.length - 1
+//                c_expression.text = "+"
 }
