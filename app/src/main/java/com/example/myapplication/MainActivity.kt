@@ -372,6 +372,22 @@ class MainActivity : AppCompatActivity() {
 }
 
     fun appendOnExpression(string: String, canClear: Boolean) {
+
+        MainScope().launch {
+            for (i in 1..2) {
+                for (i in 0..89) {
+                    c_expression.rotationX = c_expression.rotationX + 0.01F
+                    delay(1)
+                }
+
+                for (i in 90..179) {
+                    c_expression.rotationX = c_expression.rotationX + 0.01F
+                    delay(1)
+
+                }
+            }
+        }
+
         if (c_result.text.isNotEmpty()) {
             c_expression.text = ""
         }
