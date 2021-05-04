@@ -24,51 +24,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 //еееее роккк
-        main.setOnClickListener{ appendOnExpression("", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
-        c_result.setOnClickListener{ appendOnExpression("", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
-        c_expression.setOnClickListener{ appendOnExpression("", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+        main.setOnClickListener{ appendOnExpression("", true) }
+        c_result.setOnClickListener{ appendOnExpression("", true) }
+        c_expression.setOnClickListener{ appendOnExpression("", true) }
         //Числа
         c_one.setOnClickListener{ appendOnExpression("1", true)
             MainScope().launch {
