@@ -376,12 +376,12 @@ class MainActivity : AppCompatActivity() {
         MainScope().launch {
             for (i in 1..2) {
                 for (i in 0..89) {
-                    c_expression.rotationX = c_expression.rotationX + 0.1F
+                    c_expression.rotationX = c_expression.rotationX + 1
                     delay(1)
                 }
 
                 for (i in 90..179) {
-                    c_expression.rotationX = c_expression.rotationX + 0.1F
+                    c_expression.rotationX = c_expression.rotationX + 1
                     delay(1)
 
                 }
