@@ -1,15 +1,51 @@
 package com.example.myapplication
 
+
 import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
+
 import android.util.Log
+
 import kotlinx.android.synthetic.main.activity_main.*
+
+import kotlinx.coroutines.MainScope
+
+import kotlinx.coroutines.delay
+
+import kotlinx.coroutines.launch
+
 import net.objecthunter.exp4j.ExpressionBuilder
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        MainScope().launch {
+            c_one.setOnClickListener {
+                for (i in 1..10)
+                {
+                    it.scaleX = it.scaleX - 1
+                    it.scaleY = it.scaleY - 1
+                    Thread.sleep(50)
+                }
+
+                for (i in 1..10)
+                {
+                    it.scaleX = it.scaleX + 1
+                    it.scaleY = it.scaleY + 1
+                    Thread.sleep(50)
+                }
+            }
+        }
+
+
+
+
+
+
 //еееее роккк
         main.setOnClickListener { appendOnExpression("", true) }
         c_result.setOnClickListener { appendOnExpression("", true) }
