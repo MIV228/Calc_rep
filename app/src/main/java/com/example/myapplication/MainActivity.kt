@@ -29,14 +29,14 @@ class MainActivity : AppCompatActivity() {
                 {
                     it.scaleX = it.scaleX - 1
                     it.scaleY = it.scaleY - 1
-                    Thread.sleep(50)
+                    Thread.sleep(10)
                 }
 
                 for (i in 1..10)
                 {
                     it.scaleX = it.scaleX + 1
                     it.scaleY = it.scaleY + 1
-                    Thread.sleep(50)
+                    Thread.sleep(10)
                 }
             }
         }
