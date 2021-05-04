@@ -304,6 +304,20 @@ class MainActivity : AppCompatActivity() {
             c_result.text = ""
         }
         c_backspace.setOnClickListener{
+            MainScope().launch {
+                for (i in 1..2) {
+                    for (i in 0..89) {
+                        it.rotationX = it.rotationX + 1
+                        delay(1)
+                    }
+
+                    for (i in 90..179) {
+                        it.rotationX = it.rotationX + 1
+                        delay(1)
+
+                    }
+                }
+            }
             val string = c_expression.text.toString()
             if (string.isNotEmpty()) {
                 c_expression.text = string.substring(0, string.length - 1)
@@ -311,6 +325,21 @@ class MainActivity : AppCompatActivity() {
             c_result.text = ""
         }
         c_equals.setOnClickListener {
+            MainScope().launch {
+                for (i in 1..2) {
+                    for (i in 0..89) {
+                        it.rotationX = it.rotationX + 1
+                        delay(1)
+                    }
+
+                    for (i in 90..179) {
+                        it.rotationX = it.rotationX + 1
+                        delay(1)
+
+                    }
+                }
+            }
+
             try {
                 val expression = ExpressionBuilder(c_expression.text.toString()).build()
                 val result = expression.evaluate()
@@ -321,6 +350,20 @@ class MainActivity : AppCompatActivity() {
                     c_result.text = result.toString()
             } catch (e: Exception) {
                 Log.d("Exception", " message " + e.message)
+            }
+            MainScope().launch {
+                for (i in 1..2) {
+                    for (i in 0..89) {
+                        c_result.rotationX = c_result.rotationX + 1
+                        delay(1)
+                    }
+
+                    for (i in 90..179) {
+                        c_result.rotationX = c_result.rotationX + 1
+                        delay(1)
+
+                    }
+                }
             }
         }
 
