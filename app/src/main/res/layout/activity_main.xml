@@ -5,12 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:ignore="ExtraText">
-
-
-
-
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/c_keyboard"
@@ -20,49 +15,40 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="-16dp">
 
-
-
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
-
 
             <TextView
                 android:id="@+id/c_expression"
                 style="@style/my_style"
-                android:text="Выражение"
-                app:layout_constraintBottom_toTopOf="@+id/c_keyboard"
-                android:textSize="40sp"
                 android:ellipsize="start"
+                android:gravity="end"
                 android:singleLine="true"
-                android:gravity="end"/>
-
-
+                android:text="Выражение"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/c_keyboard" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
-
 
             <TextView
                 android:id="@+id/c_result"
                 style="@style/my_style"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Ответ"
-                app:layout_constraintBottom_toTopOf="@+id/c_keyboard"
                 android:ellipsize="end"
-                android:textSize="40sp"
+                android:gravity="end"
                 android:maxLines="1"
-                android:gravity="end"/>
-
+                android:text="Ответ"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@+id/c_keyboard" />
         </LinearLayout>
 
         <LinearLayout
@@ -71,12 +57,11 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-
             <ImageView
                 android:id="@+id/c_ac"
                 style="@style/my_style"
-                android:src="@mipmap/ac_ca"
-                android:scaleType="center"/>
+                android:scaleType="center"
+                android:src="@mipmap/ac_ca" />
 
             <TextView
                 android:id="@+id/c_open"
@@ -94,12 +79,12 @@
                 android:text="+" />
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
-
 
             <TextView
                 android:id="@+id/c_seven"
@@ -116,19 +101,18 @@
                 style="@style/my_style"
                 android:text="9" />
 
-
             <TextView
                 android:id="@+id/c_minus"
                 style="@style/my_style"
                 android:text="-" />
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
-
 
             <TextView
                 android:id="@+id/c_four"
@@ -141,70 +125,123 @@
                 android:text="5" />
 
             <TextView
+
                 android:id="@+id/c_six"
+
                 style="@style/my_style"
+
                 android:text="6" />
 
+
             <TextView
+
                 android:id="@+id/c_multi"
+
                 style="@style/my_style"
+
                 android:text="x" />
+
         </LinearLayout>
 
+
         <LinearLayout
+
             android:layout_width="match_parent"
+
             android:layout_height="match_parent"
+
             android:layout_weight="1"
+
             android:orientation="horizontal">
 
+
             <TextView
+
                 android:id="@+id/c_one"
+
                 style="@style/my_style"
+
                 android:text="1" />
 
+
             <TextView
+
                 android:id="@+id/c_two"
+
                 style="@style/my_style"
+
                 android:text="2" />
 
+
             <TextView
+
                 android:id="@+id/c_three"
+
                 style="@style/my_style"
+
                 android:text="3" />
+
             <TextView
+
                 android:id="@+id/c_div"
+
                 style="@style/my_style"
+
                 android:text=":" />
+
         </LinearLayout>
 
+
         <LinearLayout
+
             android:layout_width="match_parent"
+
             android:layout_height="match_parent"
+
             android:layout_weight="1"
+
             android:orientation="horizontal">
 
 
             <TextView
+
                 android:id="@+id/c_dot"
+
                 style="@style/my_style"
+
                 android:text="." />
 
+
             <TextView
+
                 android:id="@+id/c_zero"
+
                 style="@style/my_style"
+
                 android:text="0" />
 
+
             <ImageView
+
                 android:id="@+id/c_backspace"
+
                 style="@style/my_style"
-                android:src="@mipmap/c_c"
-                android:scaleType="center"/>
+
+                android:scaleType="center"
+
+                android:src="@mipmap/c_c" />
+
 
             <TextView
+
                 android:id="@+id/c_equals"
+
                 style="@style/my_style"
+
                 android:text="=" />
+
         </LinearLayout>
+
     </LinearLayout>
 
 
