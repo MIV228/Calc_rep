@@ -4,6 +4,7 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.delay
@@ -22,295 +23,65 @@ class MainActivity : AppCompatActivity() {
         c_expression.setOnClickListener{ appendOnExpression("", true) }
         //Числа
         c_one.setOnClickListener{ appendOnExpression("1", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_two.setOnClickListener{ appendOnExpression("2", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_three.setOnClickListener{ appendOnExpression("3", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_four.setOnClickListener{ appendOnExpression("4", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_five.setOnClickListener{ appendOnExpression("5", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_six.setOnClickListener{ appendOnExpression("6", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_seven.setOnClickListener{ appendOnExpression("7", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_eight.setOnClickListener{ appendOnExpression("8", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_nine.setOnClickListener{ appendOnExpression("9", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_zero.setOnClickListener{ appendOnExpression("0", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_dot.setOnClickListener{ appendOnExpression(".", true)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         //Операции
         c_plus.setOnClickListener{ appendOnExpression("+", false)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_minus.setOnClickListener{ appendOnExpression("-", false)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_multi.setOnClickListener{ appendOnExpression("*", false)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_div.setOnClickListener{ appendOnExpression("/", false)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_open.setOnClickListener{ appendOnExpression("(", false)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
         c_close.setOnClickListener{ appendOnExpression(")", false)
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }}
+            animate(it)
+        }
 
         c_ac.setOnClickListener {
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }
+            animate(it)
             c_expression.text = ""
             c_result.text = ""
         }
         c_backspace.setOnClickListener{
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }
+            animate(it)
             val string = c_expression.text.toString()
             if (string.isNotEmpty()) {
                 c_expression.text = string.substring(0, string.length - 1)
@@ -318,20 +89,7 @@ class MainActivity : AppCompatActivity() {
             c_result.text = ""
         }
         c_equals.setOnClickListener {
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        it.rotationX = it.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }
+            animate(it)
 
             try {
                 val expression = ExpressionBuilder(c_expression.text.toString()).build()
@@ -344,20 +102,7 @@ class MainActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 Log.d("Exception", " message " + e.message)
             }
-            MainScope().launch {
-                for (i in 1..2) {
-                    for (i in 0..89) {
-                        c_result.rotationX = c_result.rotationX + 1
-                        delay(1)
-                    }
-
-                    for (i in 90..179) {
-                        c_result.rotationX = c_result.rotationX + 1
-                        delay(1)
-
-                    }
-                }
-            }
+            animate(c_result)
         }
 
 
@@ -378,6 +123,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun animate(view: View) {
+        MainScope().launch {
+            for (i in 1..2) {
+                for (i in 0..89) {
+                    view.rotationX = view.rotationX + 1
+                    delay(1)
+                }
+
+                for (i in 90..179) {
+                    view.rotationX = view.rotationX + 1
+                    delay(1)
+                }
+            }
+        }
+    }
 
 }
 //            if (c_expression.text.length - 1() = "1" || "2" ) {
