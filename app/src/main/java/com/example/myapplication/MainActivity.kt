@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -74,7 +75,6 @@ class MainActivity : AppCompatActivity() {
         c_close.setOnClickListener{ appendOnExpression(")", false)
             animate(it)
         }
-
         c_ac.setOnClickListener {
             animate(it)
             c_expression.text = ""
@@ -90,7 +90,6 @@ class MainActivity : AppCompatActivity() {
         }
         c_equals.setOnClickListener {
             animate(it)
-
             try {
                 val expression = ExpressionBuilder(c_expression.text.toString()).build()
                 val result = expression.evaluate()
@@ -104,10 +103,7 @@ class MainActivity : AppCompatActivity() {
             }
             animate(c_result)
         }
-
-
-
-}
+    }
 
     fun appendOnExpression(string: String, canClear: Boolean) {
         if (c_result.text.isNotEmpty()) {
@@ -125,17 +121,24 @@ class MainActivity : AppCompatActivity() {
 
     fun animate(view: View) {
         MainScope().launch {
+            view.setBackgroundColor(Color.RED)
             for (i in 1..2) {
                 for (i in 0..89) {
                     view.rotationX = view.rotationX + 1
                     delay(1)
                 }
 
+
+
+
                 for (i in 90..179) {
                     view.rotationX = view.rotationX + 1
                     delay(1)
                 }
+
+
             }
+            view.setBackgroundColor(Color.BLACK)
         }
     }
 
