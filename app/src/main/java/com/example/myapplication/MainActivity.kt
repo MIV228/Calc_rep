@@ -2,19 +2,12 @@ package com.example.myapplication
 
 
 import androidx.appcompat.app.AppCompatActivity
-
 import android.os.Bundle
-
 import android.util.Log
-
 import kotlinx.android.synthetic.main.activity_main.*
-
 import kotlinx.coroutines.MainScope
-
 import kotlinx.coroutines.delay
-
 import kotlinx.coroutines.launch
-
 import net.objecthunter.exp4j.ExpressionBuilder
 
 
@@ -372,22 +365,6 @@ class MainActivity : AppCompatActivity() {
 }
 
     fun appendOnExpression(string: String, canClear: Boolean) {
-
-        MainScope().launch {
-            for (i in 1..2) {
-                for (i in 0..89) {
-                    c_expression.rotationX = c_expression.rotationX + 1
-                    delay(1)
-                }
-
-                for (i in 90..179) {
-                    c_expression.rotationX = c_expression.rotationX + 1
-                    delay(1)
-
-                }
-            }
-        }
-
         if (c_result.text.isNotEmpty()) {
             c_expression.text = ""
         }
