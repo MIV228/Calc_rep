@@ -98,22 +98,22 @@
 
       <TextView
           android:id="@+id/c_seven"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="7" />
 
       <TextView
           android:id="@+id/c_eight"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="8" />
 
       <TextView
           android:id="@+id/c_nine"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="9" />
 
       <TextView
           android:id="@+id/c_minus"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="-" />
     </LinearLayout>
 
@@ -126,22 +126,22 @@
 
       <TextView
           android:id="@+id/c_four"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="4" />
 
       <TextView
           android:id="@+id/c_five"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="5" />
 
       <TextView
           android:id="@+id/c_six"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="6" />
 
       <TextView
           android:id="@+id/c_multi"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="x" />
     </LinearLayout>
 
@@ -154,22 +154,22 @@
 
       <TextView
           android:id="@+id/c_one"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="1" />
 
       <TextView
           android:id="@+id/c_two"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="2" />
 
       <TextView
           android:id="@+id/c_three"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="3" />
 
       <TextView
           android:id="@+id/c_div"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text=":" />
     </LinearLayout>
 
@@ -181,23 +181,23 @@
 
       <TextView
           android:id="@+id/c_dot"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="." />
 
       <TextView
           android:id="@+id/c_zero"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="0" />
 
       <ImageView
           android:id="@+id/c_backspace"
-          style="@style/my_style"
+          style="@style/light_style"
           android:scaleType="center"
           android:src="@mipmap/c_c" />
 
       <TextView
           android:id="@+id/c_equals"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="=" />
 
     </LinearLayout>
