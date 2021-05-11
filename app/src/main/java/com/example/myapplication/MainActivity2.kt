@@ -19,7 +19,7 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val per = findViewById<Button>(R.id.perehod)
+        val per = findViewById<Button>(R.id.pereh)
         per.setOnClickListener {
             val perehod = Intent(this, MainActivity::class.java)
             startActivity(perehod)

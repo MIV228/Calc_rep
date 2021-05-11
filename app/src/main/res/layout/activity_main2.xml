@@ -8,7 +8,7 @@
     tools:context=".MainActivity2">
 
   <Button
-      android:id="@+id/perehod"
+      android:id="@+id/pereh"
       style="@style/light_style"
       android:layout_width="50dp"
       android:layout_height="205dp"
