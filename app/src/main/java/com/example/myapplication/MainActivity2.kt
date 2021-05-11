@@ -22,13 +22,13 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2) //лол!!!111! это была самая тупая ошибка лол!!!
 
 
-         try {
-             val per = findViewById<Button>(R.id.pereh)
-             per.setOnClickListener {
-                 val perehod = Intent(this, MainActivity::class.java)
-                 startActivity(perehod)
-             }
+        val per = findViewById<Button>(R.id.pereh)
+        per.setOnClickListener {
+            val perehod = Intent(this, MainActivity::class.java)
+            startActivity(perehod)
+        }
 
+         try {
 //еееее роккк
              main.setOnClickListener{ appendOnExpression("", true) }
              c_result.setOnClickListener{ appendOnExpression("", true) }

@@ -20,13 +20,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-try {
-    val per = findViewById<Button>(R.id.perehod)
-    per.setOnClickListener {
-        val perehod = Intent(this, MainActivity2::class.java)
-        startActivity(perehod)
-    }
+        val per = findViewById<Button>(R.id.perehod)
+        per.setOnClickListener {
+            val perehod = Intent(this, MainActivity2::class.java)
+            startActivity(perehod)
+        }
 
+try {
 //еееее роккк
     main.setOnClickListener{ appendOnExpression("", true) }
     c_result.setOnClickListener{ appendOnExpression("", true) }
