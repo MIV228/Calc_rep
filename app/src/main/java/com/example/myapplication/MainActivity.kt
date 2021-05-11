@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.TextView
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.delay
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val per = findViewById<TextView>(R.id.perehod)
+        val per = findViewById<Button>(R.id.perehod)
         per.setOnClickListener {
             val perehod = Intent(this, MainActivity2::class.java)
             startActivity(perehod)
