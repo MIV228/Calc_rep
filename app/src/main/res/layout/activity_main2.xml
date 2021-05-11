@@ -9,9 +9,9 @@
 
   <Button
       android:id="@+id/perehod"
-      style="@style/my_style"
+      style="@style/light_style"
       android:layout_width="50dp"
-      android:layout_height="215dp"
+      android:layout_height="205dp"
       android:text="<-"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
@@ -33,7 +33,7 @@
 
       <TextView
           android:id="@+id/c_expression"
-          style="@style/my_style"
+          style="@style/light_style"
           android:ellipsize="start"
           android:gravity="end"
           android:singleLine="true"
@@ -50,7 +50,7 @@
 
       <TextView
           android:id="@+id/c_result"
-          style="@style/my_style"
+          style="@style/light_style"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:ellipsize="end"
@@ -69,23 +69,23 @@
 
       <ImageView
           android:id="@+id/c_ac"
-          style="@style/my_style"
+          style="@style/light_style"
           android:scaleType="center"
           android:src="@mipmap/ac_ca" />
 
       <TextView
           android:id="@+id/c_open"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="(" />
 
       <TextView
           android:id="@+id/c_close"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text=")" />
 
       <TextView
           android:id="@+id/c_plus"
-          style="@style/my_style"
+          style="@style/light_style"
           android:text="+" />
     </LinearLayout>
 

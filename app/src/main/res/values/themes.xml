@@ -27,7 +27,17 @@
         <item name="fontFamily">@font/baloo_thambi</item>
     </style>
 
-
+    <style name="light_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#FF7700</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="fontFamily">@font/baloo_thambi</item>
+    </style>
 
 
 </resources>

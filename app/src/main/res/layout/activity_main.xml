@@ -11,7 +11,7 @@
         android:id="@+id/perehod"
         style="@style/my_style"
         android:layout_width="50dp"
-        android:layout_height="215dp"
+        android:layout_height="205dp"
         android:text="<-"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
