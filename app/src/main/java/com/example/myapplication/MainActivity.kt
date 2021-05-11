@@ -128,20 +128,15 @@ class MainActivity : AppCompatActivity() {
                     delay(1)
                 }
 
-
-
-
                 for (i in 90..179) {
                     view.rotationX = view.rotationX + 1
                     delay(1)
                 }
 
-
             }
             view.setBackgroundColor(Color.BLACK)
         }
     }
-
 }
 //            if (c_expression.text.length - 1() = "1" || "2" ) {
 //                c_expression.text.length - 1
