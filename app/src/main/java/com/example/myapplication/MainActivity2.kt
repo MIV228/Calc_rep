@@ -21,6 +21,8 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2) //лол!!!111! это была самая тупая ошибка лол!!!
 
+
+         try {
              val per = findViewById<Button>(R.id.pereh)
              per.setOnClickListener {
                  val perehod = Intent(this, MainActivity::class.java)
@@ -113,6 +115,11 @@ class MainActivity2 : AppCompatActivity() {
                  animate(c_result)
              }
          }
+         catch (e:Exception) {
+             Log.d("Exception", " message " + e.message)
+
+
+         }}
 
     fun appendOnExpression(string: String, canClear: Boolean) {
         if (c_result.text.isNotEmpty()) {
