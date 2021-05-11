@@ -71,7 +71,7 @@
           android:id="@+id/c_ac"
           style="@style/light_style"
           android:scaleType="center"
-          android:src="@mipmap/ac_ca" />
+          android:src="@mipmap/ac_light" />
 
       <TextView
           android:id="@+id/c_open"
@@ -193,7 +193,7 @@
           android:id="@+id/c_backspace"
           style="@style/light_style"
           android:scaleType="center"
-          android:src="@mipmap/c_c" />
+          android:src="@mipmap/c_light" />
 
       <TextView
           android:id="@+id/c_equals"
