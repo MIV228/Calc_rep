@@ -1,11 +1,13 @@
 package com.example.myapplication
 
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.delay
@@ -17,6 +19,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val per = findViewById<TextView>(R.id.perehod)
+        per.setOnClickListener {
+            val perehod = Intent(this, MainActivity2::class.java)
+            startActivity(perehod)
+        }
 
 //еееее роккк
         main.setOnClickListener{ appendOnExpression("", true) }
