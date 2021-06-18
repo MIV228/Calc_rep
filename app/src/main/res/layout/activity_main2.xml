@@ -5,10 +5,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/w_main"
     tools:context=".MainActivity2">
 
   <Button
-      android:id="@+id/pereh"
+      android:id="@+id/w_pereh"
       style="@style/light_style"
       android:layout_width="50dp"
       android:layout_height="205dp"
@@ -18,7 +19,7 @@
       tools:ignore="MissingConstraints" />
 
   <LinearLayout
-      android:id="@+id/c_keyboard"
+      android:id="@+id/w_c_keyboard"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:orientation="vertical"
@@ -32,7 +33,7 @@
         android:orientation="horizontal">
 
       <TextView
-          android:id="@+id/c_expression"
+          android:id="@+id/w_c_expression"
           style="@style/light_style"
           android:ellipsize="start"
           android:gravity="end"
@@ -49,7 +50,7 @@
         android:orientation="horizontal">
 
       <TextView
-          android:id="@+id/c_result"
+          android:id="@+id/w_c_result"
           style="@style/light_style"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
@@ -68,23 +69,23 @@
         android:orientation="horizontal">
 
       <ImageView
-          android:id="@+id/c_ac"
+          android:id="@+id/w_c_ac"
           style="@style/light_style"
           android:scaleType="center"
           android:src="@mipmap/ac_light" />
 
       <TextView
-          android:id="@+id/c_open"
+          android:id="@+id/w_c_open"
           style="@style/light_style"
           android:text="(" />
 
       <TextView
-          android:id="@+id/c_close"
+          android:id="@+id/w_c_close"
           style="@style/light_style"
           android:text=")" />
 
       <TextView
-          android:id="@+id/c_plus"
+          android:id="@+id/w_c_plus"
           style="@style/light_style"
           android:text="+" />
     </LinearLayout>
@@ -97,22 +98,22 @@
         android:orientation="horizontal">
 
       <TextView
-          android:id="@+id/c_seven"
+          android:id="@+id/w_c_seven"
           style="@style/light_style"
           android:text="7" />
 
       <TextView
-          android:id="@+id/c_eight"
+          android:id="@+id/w_c_eight"
           style="@style/light_style"
           android:text="8" />
 
       <TextView
-          android:id="@+id/c_nine"
+          android:id="@+id/w_c_nine"
           style="@style/light_style"
           android:text="9" />
 
       <TextView
-          android:id="@+id/c_minus"
+          android:id="@+id/w_c_minus"
           style="@style/light_style"
           android:text="-" />
     </LinearLayout>
@@ -125,22 +126,22 @@
         android:orientation="horizontal">
 
       <TextView
-          android:id="@+id/c_four"
+          android:id="@+id/w_c_four"
           style="@style/light_style"
           android:text="4" />
 
       <TextView
-          android:id="@+id/c_five"
+          android:id="@+id/w_c_five"
           style="@style/light_style"
           android:text="5" />
 
       <TextView
-          android:id="@+id/c_six"
+          android:id="@+id/w_c_six"
           style="@style/light_style"
           android:text="6" />
 
       <TextView
-          android:id="@+id/c_multi"
+          android:id="@+id/w_c_multi"
           style="@style/light_style"
           android:text="x" />
     </LinearLayout>
@@ -153,22 +154,22 @@
         android:orientation="horizontal">
 
       <TextView
-          android:id="@+id/c_one"
+          android:id="@+id/w_c_one"
           style="@style/light_style"
           android:text="1" />
 
       <TextView
-          android:id="@+id/c_two"
+          android:id="@+id/w_c_two"
           style="@style/light_style"
           android:text="2" />
 
       <TextView
-          android:id="@+id/c_three"
+          android:id="@+id/w_c_three"
           style="@style/light_style"
           android:text="3" />
 
       <TextView
-          android:id="@+id/c_div"
+          android:id="@+id/w_c_div"
           style="@style/light_style"
           android:text=":" />
     </LinearLayout>
@@ -180,29 +181,28 @@
         android:orientation="horizontal">
 
       <TextView
-          android:id="@+id/c_dot"
+          android:id="@+id/w_c_dot"
           style="@style/light_style"
           android:text="." />
 
       <TextView
-          android:id="@+id/c_zero"
+          android:id="@+id/w_c_zero"
           style="@style/light_style"
           android:text="0" />
 
       <ImageView
-          android:id="@+id/c_backspace"
+          android:id="@+id/w_c_backspace"
           style="@style/light_style"
           android:scaleType="center"
           android:src="@mipmap/c_light" />
 
       <TextView
-          android:id="@+id/c_equals"
+          android:id="@+id/w_c_equals"
           style="@style/light_style"
           android:text="=" />
 
     </LinearLayout>
 
   </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
